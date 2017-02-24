@@ -6,6 +6,7 @@ import java.awt.Dimension;
 
 import javax.swing.*;
 import regex.controller.*;
+import regex.view.*;
 
 public class RegexPanel extends JPanel
 {
@@ -89,11 +90,44 @@ private void setupLayout()
 private void setupListeners()
 {
 
-	onlyButton.addActionListener(new ActionListener()
-		{
-			public void actionPerformed(Action click)
-			{
-		
+	onlyButton.addActionListener(new ActionListener() {
+		public void actionPerformed(ActionEvent selection) {
+				if(firstField.toString().matches("[A-Za-z,.-']{2,1000}"))
+				{
+					
+				}
+				else
+				{
+				
+				}
+				
+				if(lastField.toString().matches("[A-Za-z,.'- ]{2,1000}"))
+				{
+					
+				} 
+				else
+				{
+					
+				}
+//				
+				if(emailField.toString().matches("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$"))
+				{
+					
+				}
+				else
+				{
+				
+				}
+				
+				if(phoneField.toString().matches("[0-9]{10}"))
+				{
+					
+				} 
+				else
+				{
+					
+				}
+//					
 			}
 			});
 	
